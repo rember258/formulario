@@ -11,8 +11,8 @@ error_reporting(0);
 if($enviar){
 	$link=mysql_connect("localhost","root","usbw");
 	mysql_select_db("carrera",$db);
-	$sql="INSERT INTO agenda(nombre, direccion)";
-	$sql.="VALUES('$nombre','$direccion')";
+	$sql="INSERT INTO agenda(nombre, direccion, telefono)";
+	$sql.="VALUES('$nombre','$direccion','$telefono')";
 	$result=mysql_query($sql);
 	echo"¡Gracias! Hemos recibido sus datos.\n";
 }else{

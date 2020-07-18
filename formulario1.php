@@ -9,7 +9,7 @@
 <form method="post" action="registro.php">
 Nombre    : <input type="text" name="nombre" /><br />
 Direccion : <input type="text" name="direccion" /><br />
-
+Telefono:<input type="text" name="telefono" /><br />
 <input type="submit" name="enviar" value="Aceptar informacion" />
 </form>
 </body>

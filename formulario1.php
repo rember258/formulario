@@ -6,6 +6,17 @@
     <title>Rember</title>
 </head>
 <body>
+<?php
+error_reporting(0);
+if($enviar){
+	$link=mysql_connect("localhost","root","usbw");
+	mysql_select_db("carrera",$db);
+	$sql="INSERT INTO agenda(nombre, direccion)";
+	$sql.="VALUES('$nombre','$direccion')";
+	$result=mysql_query($sql);
+	echo"¡Gracias! Hemos recibido sus datos.\n";
+}else{
+?>
 <form method="post" action="registro.php">
 Nombre    : <input type="text" name="nombre" /><br />
 Direccion : <input type="text" name="direccion" /><br />
